@@ -3,76 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Curriculim Vitae</title>
 </head>
 <body>
-    <header>
-        <h1>Curriculum Vitae</h1>
-    </header>
-    <section>
-        <h2>Iván Alagastino</h2>
-        <ul>
-            <li>Cuil: 20-38989324-3</li>
-            <li>Email: alagastino.ivane@gmail.com</li>
-            <li>Telefono: 011 6642-9124 / 4271-1302</li>
-            <li>Direccion: Calle 812 Nº 2552, Quilmes Oeste - San Francisco Solano</li>
-            <li>Edad: 25 años</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Educación:</h2>
-        <ul>Secundario
-            <li>Titulo obtenido: Bachiller con capacitación laboral como auxiliar en investigación social y acción comunitaria.</li>
-            <li>Establecimiento: Instituto Sagrado Corazón de Jesús.</li>
-        </ul>
-        <ul>Universitario
-            <li>Carrera: Licenciatura en análisis de sistemas (en curso).</li>
-            <li>Año: 1º</li>
-            <li>Universidad: FIUBA (Facultad de ingenieria de la UBA)</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Conocimientos:</h2>
-        <ul>Programación
-            <li>HTML5, CSS3, JS(básico)</li>
-            <li>POO en C++ y JAVA</li>
-        </ul>
-        <ul>Computación
-            <li>Manejo de Microsoft Office (Word, Excel, Power Point).</li>
-        </ul>
-        <ul>Idiomas
-            <li>Inglés: habla nivel básico, lectura nivel medio.</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Experiencia Laboral:</h2>
-        <ul>
-            <li>Sin experiencia como programador.</li>
-            <li>Pasantia en un observatorio social como entrevistador.</li>
-            <li>Atencion al cliente (camarero) y manejo de caja en un restaurante.</li>
-        </ul>
-    </section>
-    <section>
-        <form action="" method="POST">
-            <fieldset>
-                <legend>Contactame</legend>
-                <label for="">Nombre: </label>
-                <input type="text">
-                <label for="">Email: </label>
-                <input type="text">
-                <label for="">Asunto: </label>
-                <input type="text">
-                <label for="">Mensaje: </label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-            </fieldset>
-        </form>
-    </section>
-    <footer>
-        <ul>Redes Sociales
-            <a href="https://wa.link/fEc0">Whatsapp</a>
-            <a href="https://www.linkedin.com/in/iv%C3%A1n-alagastino-a1b414183/">LinkedIn</i></a>
-            <a href="https://github.com/IvanEmanuel0">GitHub</a>
-        </ul>
-    </footer>
+    <div class="container-fluid">
+        <section class="sobre-mi d-flex align-items-center px-5">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-sm-12">
+                    <h2><i class="far fa-user"></i> Sobre Mí</h2>
+                </div>
+                <div class="col-sm-8">
+                    <p>Hola! Soy Iván Emanuel Alagastino, tengo 25 años. Actualmente estoy estudiando Licenciatura en análsis de
+                        sistemas.
+                        Estoy en busca de empezar a adquirir experiencia dentro del area de la programación y tecnologias.</p>
+                </div>
+                <div class="col-sm-3">
+                    <img class="img-thumbnail rounded-circle" src="./images/mifoto.jpeg" alt="Iván Alagastino">
+                </div>
+            </div>
+        </section>
+        <section class="tecnologias p-5">
+            <div class="row">
+                <div class="col-sm-12 pb-5">
+                    <h2><i class="fas fa-code"></i> Tecnologias de programación</h2>
+                </div>
+            </div>
+            <div class="row py-2 d-flex justify-content-center">
+                <div class="col-sm-2">
+                    <div class="card card-tec card-html">
+                        <div class="card-body"><i class="fab fa-html5 fa-5x"></i></div>
+                        <h4 class="card-title">HTML</h4>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card card-tec card-css">
+                        <div class="card-body"><i class="fab fa-css3-alt fa-5x"></i></div>
+                        <h4 class="card-title">CSS</h4>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card card-tec card-js">
+                        <div class="card-body"><i class="fab fa-js fa-5x"></i></div>
+                        <h4 class="card-title">JavaScript</h4>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card card-tec card-php">
+                        <div class="card-body"><i class="fab fa-php fa-5x"></i></div>
+                        <h4 class="card-title">PHP</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-2 d-flex justify-content-center">
+                <div class="col-sm-2">
+                    <div class="card card-tec card-laravel">
+                        <div class="card-body"><i class="fab fa-laravel fa-5x"></i></div>
+                        <h4 class="card-title">Laravel</h4>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card card-tec card-bootstrap">
+                        <div class="card-body"><i class="fab fa-bootstrap fa-5x"></i></div>
+                        <h4 class="card-title">Bootstrap</h4>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card card-tec card-git">
+                        <div class="card-body"><i class="fab fa-git-alt fa-5x"></i></div>
+                        <h4 class="card-title">Git</h4>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card card-tec card-bbdd">
+                        <div class="card-body"><i class="fas fa-database fa-5x"></i></div>
+                        <h4 class="card-title">Base de datos</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="conocimientos p-5">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-sm-12 pb-5">
+                    <h2><i class="fas fa-lightbulb"></i> Idiomas y Hobbies</h2>
+                </div>
+                <div class="col-sm-5">
+                    <div class="card card-conocimiento ">
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <i class="i-card fas fa-comment-alt fa-7x"></i>
+                            </div>
+                            <div class="col-sm-7 d-flex align-items-center">
+                                <ul> <span>IDIOMAS</span>
+                                    <li>Inglés - nivel B1</li>
+                                    <li>Español - nativo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="card card-conocimiento d-flex justify-content-center">
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <i class="i-card fas fa-star fa-7x"></i>
+                            </div>
+                            <div class="col-sm-7 d-flex align-items-center">
+                                <ul> <span>HOBBIES</span>
+                                    <li>Series</li>
+                                    <li>Video juegos</li>
+                                    <li>Cocina</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="estudios p-5">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-sm-12 pb-5">
+                    <h2><i class="fas fa-graduation-cap"></i> Estudios</h2>
+                </div>
+                <div class="col-sm-5">
+                    <div class="card card-estudios">
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <img class="image-fiuba" src="./images/fiuba.png" alt="facultad de ingeniería de la univerdad de buenos aires">
+                            </div>
+                            <div class="col-sm-7 d-flex align-items-center">
+                                <ul>
+                                    <span>FIUBA</span>
+                                    <li>1º año</li>
+                                    <li>Lic. Analisis de Sistemas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="card card-estudios">
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <img class="image-comit" src="./images/logo.png" alt="">
+                            </div>
+                            <div class="col-sm-7 d-flex align-items-center">
+                                <ul>
+                                    <span>Comunidad IT</span>
+                                    <li>Progrmación en PHP</li>
+                                    <li>Año 2020</li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacto p-5">
+            <div class="row pb-5">
+                <div class="col-sm-12">
+                    <h2><i class="far fa-envelope"></i> Contactame</h2>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <form action="" method="POST">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-sm-5">
+                            <div class="form-group">
+                                <input placeholder="NOMBRE" required type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="form-group">
+                                <input placeholder="EMAIL" required type="email" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-10">
+                            <div class="form-group">
+                                <input placeholder="ASUNTO" required type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-10">
+                            <div class="form-group">
+                                <textarea placeholder="MENSAJE" required name="" id="" cols="22" rows="3" class="form-control"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 pt-3">
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer class="footer">
+            <ul class="nav-list">
+                <li class="nav-link px-5"><a href="https://wa.link/fEc0"><i class="fab fa-whatsapp fa-2x"></i></a></li>
+                <li class="nav-link px-5"><a href="https://www.linkedin.com/in/iv%C3%A1n-alagastino-a1b414183/"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
+                <li class="nav-link px-5"><a href="https://github.com/IvanEmanuel0"><i class="fab fa-github fa-2x"></i></a></li>
+            </ul> 
+        </footer>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
